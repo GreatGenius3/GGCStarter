@@ -1,3 +1,0 @@
-C:/SOMMAR_PROGRAMMERING/VSCode/MyCStart/build/CMakeFiles/MyCStart.dir
-C:/SOMMAR_PROGRAMMERING/VSCode/MyCStart/build/CMakeFiles/edit_cache.dir
-C:/SOMMAR_PROGRAMMERING/VSCode/MyCStart/build/CMakeFiles/rebuild_cache.dir

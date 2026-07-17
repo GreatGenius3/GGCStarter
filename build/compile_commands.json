@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/SOMMAR_PROGRAMMERING/VSCode/MyCStart/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -IC:/SOMMAR_PROGRAMMERING/VSCode/MyCStart/include -O3 -DNDEBUG -std=gnu11 -o CMakeFiles\\MyCStart.dir\\src\\main.c.obj -c C:\\SOMMAR_PROGRAMMERING\\VSCode\\MyCStart\\src\\main.c",
-  "file": "C:\\SOMMAR_PROGRAMMERING\\VSCode\\MyCStart\\src\\main.c",
-  "output": "CMakeFiles\\MyCStart.dir\\src\\main.c.obj"
-}
-]
