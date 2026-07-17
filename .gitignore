@@ -1,18 +1,33 @@
-# Prerequisites
-*.d
+# Build directories
+build/
+out/
+
+# VS Code
+.vscode/
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.app
 
 # Object files
 *.o
-*.ko
 *.obj
-*.elf
 
-# Linker output
+# Debug files
+*.pdb
+*.idb
 *.ilk
-*.map
-*.exp
+*.log
 
-# Precompiled Headers
+# CMake cache
+CMakeCache.txt
+CMakeFiles/
+
+# Precompiled headers
 *.gch
 *.pch
 
@@ -22,27 +37,14 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Linker output
+*.map
+*.exp
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+# Misc
+*.d
+*.elf
 *.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
 *.mod*
 *.cmd
 .tmp_versions/
@@ -50,14 +52,3 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-
-# debug information files
-*.dwo
-
-build/
-out/
-*.exe
-*.obj
-*.pdb
-*.ilk
-*.log
