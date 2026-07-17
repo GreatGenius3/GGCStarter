@@ -1,2 +1,2 @@
 # GGCStarter
-En mall f?r att b?rja med C och har Debug och Release mode
+En mall för att börja med C och har Debug och Release mode
