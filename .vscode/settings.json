@@ -3,6 +3,6 @@
     "clangd.arguments": [
         "--header-insertion=never"
     ],
-    "cmake.generator": "Ninja",
+    "cmake.generator": "MinGW Makefiles",
     "cmake.buildDirectory": "${workspaceFolder}/build"
 }
