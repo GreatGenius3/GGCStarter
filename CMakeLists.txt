@@ -4,10 +4,6 @@ project(MyCStart C)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-# S?tt separata kataloger f?r Debug och Release
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/Debug)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/Release)
-
 # Skriv ut build mode (Debug eller Release)
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     add_compile_definitions(BUILD_MODE_DEBUG)
