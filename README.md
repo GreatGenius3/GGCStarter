@@ -94,6 +94,28 @@ cmake --build build/debug
 ./build/debug/MyCStart.exe
 ```
 
+## 💻 För utvecklare (Terminal & Traditionell .sln)
+
+Om du föredrar att arbeta via terminalen eller vill generera en traditionell Visual Studio Solution-fil, använd följande kommandon i projektets rot:
+
+### Skapa och öppna en traditionell `.sln`-fil
+Om du vill arbeta med en klassisk Visual Studio-lösning, kör detta i din terminal:
+```bash
+cmake -S . -B build-vs -G "Visual Studio 18 2026" -A x64
+```
+* **Öppna filen:** Gå till mappen `build-vs` och dubbelklicka på `SKOLA1.sln`.
+* **Viktigt:** Högerklicka på projektet **SKOLA1** i Solution Explorer och välj **Sätt som startprojekt** (Set as Startup Project) innan du kör.
+
+### Bygg och kompilera direkt i terminalen (MinGW / Make)
+```bash
+# 1. Generera byggfiler
+cmake -S . -B build-mingw -G "MinGW Makefiles"
+
+# 2. Kompilera koden (universellt kommando)
+cmake --build build-mingw
+```
+*Den färdiga filen `SKOLA1.exe` hamnar direkt i mappen `build-mingw/`.*
+
 ## License
 
 Detta projekt är fritt att använda för utbildningssyften.
