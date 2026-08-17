@@ -8,6 +8,13 @@
       "binaryDir": "${sourceDir}/build/${presetName}"
     },
     {
+      "name": "Visual Studio MSVC",
+      "hidden": true,
+      "generator": "Visual Studio 18 2026",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "architecture": "x64"
+    },
+    {
       "name": "debug",
       "displayName": "GCC: Debug",
       "inherits": "Mingw GCC",
@@ -22,6 +29,28 @@
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release"
       }
+    },
+    {
+      "name": "msvc-debug",
+      "displayName": "Visual Studio: Debug",
+      "inherits": "Visual Studio MSVC"
+    },
+    {
+      "name": "msvc-release",
+      "displayName": "Visual Studio: Release",
+      "inherits": "Visual Studio MSVC"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "msvc-debug",
+      "configurePreset": "msvc-debug",
+      "configuration": "Debug"
+    },
+    {
+      "name": "msvc-release",
+      "configurePreset": "msvc-release",
+      "configuration": "Release"
     }
   ]
 }
